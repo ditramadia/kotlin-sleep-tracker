@@ -15,12 +15,8 @@
   -->
 
 <resources>
-
-    <color name="colorPrimary">#6ab343</color>
-    <color name="colorPrimaryDark">#388310</color>
-    <color name="colorAccent">#6ab343</color>
-
-    <color name="green_color">#388310</color>
-    <color name="white_text_color">#f0f0f0</color>
-
+    <dimen name="margin">16dp</dimen>
+    <dimen name="icon_size">64dp</dimen>
+    <dimen name="title_text_size">20sp</dimen>
+    <dimen name="triple_margin">48dp</dimen>
 </resources>
