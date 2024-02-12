@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/sleepTrackerFragment">
 
+    <fragment
+        android:id="@+id/sleepTrackerFragment"
+        android:name="com.example.sleeptracker.sleeptracker.SleepTrackerFragment"
+        android:label="fragment_sleep_tracker"
+        tools:layout="@layout/fragment_sleep_tracker" />
 </navigation>
