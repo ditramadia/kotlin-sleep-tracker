@@ -56,14 +56,20 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
 
     // Room
-    val room_version = "2.6.1"
-    implementation("androidx.room:room-ktx:${room_version}")
-    ksp("androidx.room:room-compiler:${room_version}")
+    val version_room = "2.6.1"
+    implementation("androidx.room:room-ktx:${version_room}")
+    ksp("androidx.room:room-compiler:${version_room}")
 
     // ViewModel and LiveData
     val version_lifecycle = "2.7.0"
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$version_lifecycle")
 
     // Lifecycle
-    implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
+    val version_lifecycle_extensions = "2.2.0"
+    implementation("androidx.lifecycle:lifecycle-extensions:$version_lifecycle_extensions")
+
+    // Coroutines
+    val version_coroutines = "1.7.3"
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$version_coroutines")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$version_coroutines")
 }
