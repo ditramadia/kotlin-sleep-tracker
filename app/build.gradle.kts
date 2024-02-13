@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.devtools.ksp") version "1.9.22-1.0.16"
+    id("androidx.navigation.safeargs")
 }
 
 android {
@@ -30,6 +32,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -52,4 +55,25 @@ dependencies {
     // Navigation
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
+
+    // Room
+    val version_room = "2.6.1"
+    implementation("androidx.room:room-ktx:${version_room}")
+    ksp("androidx.room:room-compiler:${version_room}")
+
+    // ViewModel and LiveData
+    val version_lifecycle = "2.7.0"
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$version_lifecycle")
+
+    // Lifecycle
+    val version_lifecycle_extensions = "2.2.0"
+    implementation("androidx.lifecycle:lifecycle-extensions:$version_lifecycle_extensions")
+
+    // Coroutines
+    val version_coroutines = "1.7.3"
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$version_coroutines")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$version_coroutines")
+
+    // Safe args
+
 }
