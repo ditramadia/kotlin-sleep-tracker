@@ -1,5 +1,6 @@
 package com.example.sleeptracker.database
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
@@ -10,7 +11,7 @@ import androidx.room.Update
 @Dao
 interface SleepDatabaseDao {
     @Insert
-    fun insertOne(night: SleepNight)
+    fun insertOne(night: SleepNight) : Long
 
     @Update
     fun updateOne(night: SleepNight)
@@ -22,9 +23,8 @@ interface SleepDatabaseDao {
     fun clear()
 
     @Query("SELECT * FROM daily_sleep_quality_table ORDER BY nightId DESC")
-    fun getAll(): LiveData<List<SleepNight>>
+    fun getAll(): List<SleepNight>
 
     @Query("SELECT * FROM daily_sleep_quality_table ORDER BY nightId DESC LIMIT 1")
     fun getTonight(): SleepNight?
-
 }
