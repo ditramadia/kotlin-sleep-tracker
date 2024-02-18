@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("com.google.devtools.ksp") version "1.9.22-1.0.16"
     id("androidx.navigation.safeargs")
+    id("org.jetbrains.kotlin.kapt") version "1.9.22"
 }
 
 android {
@@ -74,6 +75,6 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$version_coroutines")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$version_coroutines")
 
-    // Safe args
+    // annotations
 
 }

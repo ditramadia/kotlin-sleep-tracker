@@ -18,6 +18,7 @@
 
     <!-- App title and fragment titles -->
     <string name="app_name">Track My Sleep Quality</string>
+    <string name="track_my_sleep_please">Track My Sleep Please</string>
     <string name="sleep_tracker_fragment">SleepTrackerFragment</string>
     <string name="sleep_quality_fragment">SleepQualityFragment</string>
 
@@ -52,8 +53,8 @@
 
     <!-- Toast to play after Clear button has been pressed -->
     <string name="cleared_message">All your data is gone forever.</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="track_my_sleep_please">Track My Sleep Please</string>
+    <string name="minutes_length">%d minutes on %s</string>
+    <string name="hours_length">%d hours on %s</string>
+    <string name="seconds_length">%d seconds on %s</string>
 
 </resources>
