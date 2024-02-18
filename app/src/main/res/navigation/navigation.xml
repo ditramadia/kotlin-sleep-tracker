@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_sleepTrackerFragment_to_sleepQualityFragment"
             app:destination="@id/sleepQualityFragment" />
+        <action
+            android:id="@+id/action_sleepTrackerFragment_to_sleepDetailFragment"
+            app:destination="@id/sleepDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/sleepQualityFragment"
@@ -24,5 +27,16 @@
         <argument
             android:name="sleepNightKey"
             app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/sleepDetailFragment"
+        android:name="com.example.sleeptracker.sleepdetail.SleepDetailFragment"
+        android:label="SleepDetailFragment" >
+        <argument
+            android:name="sleepNightKey"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_sleepDetailFragment_to_sleepTrackerFragment"
+            app:destination="@id/sleepTrackerFragment" />
     </fragment>
 </navigation>
